@@ -1,0 +1,67 @@
+.Offers {
+    margin-top: 20px;
+    width: 80%; /* Increased the width for a larger container */
+    height: 70vh; /* Slightly taller for better proportions */
+    display: flex;
+    margin: auto; /* Centers the container horizontally */
+    padding: 0 80px; /* Reduced padding for tighter layout */
+    margin-bottom: 100px; /* Reduced bottom margin */
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea 60%);
+    align-items: center; /* Centers content vertically */
+    justify-content: space-between; /* Ensures left and right sections align properly */
+  }
+  
+  .offers-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px; /* Reduced the space between elements */
+  }
+  
+  .offers-left h1 {
+    color: #171717;
+    font-size: 64px; /* Reduced font size slightly for better fit */
+    font-weight: 600;
+    margin: 0; /* Prevent extra space between headings */
+    line-height: 1.2; /* Tightened line spacing */
+  }
+  
+  .offers-left p {
+    color: #171717;
+    font-size: 18px; /* Reduced font size slightly */
+    font-weight: 500;
+    margin: 10px 0; /* Reduced margin for tighter layout */
+  }
+  
+  .offers-left button {
+    width: 300px; /* Slightly wider button */
+    height: 80px; /* Increased height for a thicker button */
+    border-radius: 40px; /* Adjusted for a rounded look */
+    background: #ff4141;
+    border: none;
+    color: white;
+    font-size: 24px; /* Increased font size */
+    font-weight: 600;
+    margin-top: 20px; /* Reduced margin */
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .offers-left button:hover {
+    background: #e03a3a; /* Slightly darker on hover */
+  }
+  
+  .offers-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 0; /* Removed top padding for better alignment */
+  }
+  
+  .offers-right img {
+    max-width: 55%; /* Ensures the image fits nicely */
+    height: auto;
+  }
+  

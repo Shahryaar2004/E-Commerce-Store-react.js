@@ -1,0 +1,104 @@
+/* Main container styling */
+.new-collections {
+    padding: 30px 20px;
+    text-align: center;
+  }
+  
+  /* Header styling */
+  .new-collections h1 {
+    color: #171717;
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  .new-collections hr {
+    width: 120px;
+    height: 5px;
+    border-radius: 3px;
+    background: #252525;
+    margin: 0 auto;
+  }
+  
+  /* Collections Grid: 3 items per row */
+  .collections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Exactly 3 items per row */
+    gap: 20px;
+    margin-top: 40px;
+    justify-items: center;
+  }
+  
+  /* Card styling */
+  .new-collections-card {
+    width: 300px; /* Consistent card width */
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .new-collections-card:hover {
+    transform: scale(1.05); /* Smooth scaling effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Image styling */
+  .new-collections-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
+  }
+  
+  /* Product name */
+  .new-collections-name {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  /* Price display */
+  .new-collections-prices {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+  }
+  
+  /* New price */
+  .new-price {
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  /* Old price */
+  .old-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 16px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 992px) {
+    .collections {
+      grid-template-columns: repeat(2, 1fr); /* 2 items per row for medium screens */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .collections {
+      grid-template-columns: 1fr; /* 1 item per row for small screens */
+    }
+  
+    .new-collections-card {
+      width: 90%; /* Make cards responsive on small screens */
+    }
+  }
+  

@@ -1,0 +1,132 @@
+/* Main container for cart items */
+.cart-items {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    border-radius: 10px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Header for item labels */
+  .cartitmes-format-main {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    color: #333;
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+    transition: color 0.3s ease;
+  }
+  
+  .cartitmes-format-main p:hover {
+    color: #007bff;
+    cursor: pointer;
+  }
+  
+  /* Each cart item row */
+  .cartitems-format {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .cartitems-format:hover {
+    background: #f8f8f8;
+    transform: scale(1.02);
+  }
+  
+  /* Product image */
+  .cartitem-product-icon {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 15px;
+  }
+  
+  /* Product details layout */
+  .cartitems-format p {
+    margin: 0;
+    font-size: 1rem;
+    color: #444;
+    flex: 1;
+    text-align: center;
+  }
+  
+  
+  
+  
+  
+  /* Total price styling */
+  .cartitems-format p:last-of-type {
+    font-weight: bold;
+    color: black;
+  }
+  
+  /* Remove icon with hover effect */
+  .remove-icon {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    transition: transform 0.2s ease, filter 0.2s ease;
+  }
+  
+  .remove-icon:hover {
+    transform: scale(1.2);
+    filter: brightness(0.8);
+  }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    .cart-items {
+      width: 95%;
+      padding: 15px;
+    }
+  
+    .cartitmes-format-main, .cartitems-format {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .cartitems-format p {
+      width: 100%;
+      text-align: left;
+      padding: 5px 0;
+    }
+
+
+    /* Quantity button with dark orange background and white text */
+/* Quantity button with dark orange background and white text */
+.cartitems-quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 15px;
+    background-color: #d35400; /* Dark orange background */
+    color: #ffffff !important; /* Ensure white text */
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .cartitems-quantity:hover {
+    background-color: #e67e22; /* Slightly lighter orange on hover */
+  }
+  
+  
+  }
+  

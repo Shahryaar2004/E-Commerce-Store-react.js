@@ -1,0 +1,81 @@
+.newsLetter {
+    margin-top: 500px;
+    width: 75%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 20px 40px; /* Adjust padding for better spacing */
+    margin-bottom: 150px;
+    background: linear-gradient(180deg, rgba(191, 126, 255, 0.7), rgba(255, 255, 255, 0.3)); /* Faded purple background */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border-radius: 15px; /* Rounded corners */
+    gap: 30px;
+  }
+  
+  .newsLetter h1 {
+    color: #454545;
+    font-size: 55px;
+    font-weight: 600;
+    text-align: center; /* Center align for better presentation */
+  }
+  
+  .newsLetter p {
+    color: #454545;
+    font-size: 20px;
+    text-align: center; /* Center align for better presentation */
+  }
+  
+  .newsLetter div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    width: 100%; /* Full width for responsiveness */
+    max-width: 730px; /* Maximum width for larger screens */
+    height: 70px;
+    border-radius: 35px; /* Rounded corners */
+    border: 1px solid #e3e3e3;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Light shadow for depth */
+  }
+  
+  .newsLetter input {
+    width: 60%; /* Flexible width for input */
+    margin-left: 20px; /* Reduced margin for better alignment */
+    border: none;
+    outline: none;
+    color: #616161;
+    font-family: Poppins, sans-serif; /* Added fallback font */
+    font-size: 16px;
+    padding: 10px; /* Added padding for comfort */
+    border-radius: 30px; /* Rounded corners */
+    transition: all 0.3s ease; /* Smooth transition effect */
+  }
+  
+  .newsLetter input:focus {
+    border: 2px solid #bc9bff; /* Border color on focus */
+    box-shadow: 0 0 5px rgba(188, 155, 255, 0.5); /* Glow effect on focus */
+  }
+  
+  .newsLetter div button {
+    width: 200px; /* Adjusted width */
+    height: 70px;
+    border-radius: 35px; /* Rounded corners */
+    background: #6c63ff; /* Purple background */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effects */
+  }
+  
+  .newsLetter div button:hover {
+    background: #5b54e2; /* Darker shade on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+  }
+  
+  .newsLetter div button:active {
+    transform: translateY(0); /* Reset lift effect on click */
+  }
+  

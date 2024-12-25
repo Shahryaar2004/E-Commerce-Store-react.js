@@ -1,0 +1,72 @@
+.popular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 90vh;
+  }
+  
+  .popular h1 {
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+  }
+  
+  .popular hr {
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+  }
+  
+  .popular-items {
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    width: 90%; /* Make sure it adapts to the container width */
+    max-width: 1200px; /* Optional: Limit the container size */
+  }
+  
+  .product-card {
+    width: 200px; /* Ensure each card has a fixed width */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05); /* Smooth hover effect */
+  }
+  
+  .product-image {
+    width: 100%; /* Ensure the image fits the card */
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .product-name {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .product-prices {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .new-price {
+    color: #e74c3c;
+    font-weight: bold;
+  }
+  
+  .old-price {
+    text-decoration: line-through;
+    color: #999;
+  }
+  

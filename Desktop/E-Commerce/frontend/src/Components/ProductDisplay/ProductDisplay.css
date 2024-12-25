@@ -1,0 +1,131 @@
+.productdisplay {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #f5f5f5;
+}
+
+.productdisplay-left,
+.productdisplay-right {
+  flex: 1;
+}
+
+.productdisplay-img-list {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.productdisplay-img-list img {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: transform 0.2s;
+}
+
+.productdisplay-img-list img:hover {
+  transform: scale(1.1);
+}
+
+.productdisplay-image {
+  text-align: center;
+}
+
+.productdsiplay-main-img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+}
+
+.productdisplay-right h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.product-display-right-star {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.product-display-right-star img {
+  width: 20px;
+  height: 20px;
+}
+
+.product-display-right-star p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.product-display-prices {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.product-old-price {
+  font-size: 1.2rem;
+  color: #888;
+  text-decoration: line-through;
+}
+
+.product-new-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #d9534f;
+}
+
+.product-display-description {
+  margin: 1rem 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+.product-dispplay-size {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+  align-items: center;
+}
+
+.product-dispplay-size div {
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.product-dispplay-size div:hover {
+  background-color: #EB423F;
+  color: white;
+}
+
+button {
+  padding: 0.8rem 2rem;
+  background-color: #EB423F;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 1rem;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #EB423F;
+}
